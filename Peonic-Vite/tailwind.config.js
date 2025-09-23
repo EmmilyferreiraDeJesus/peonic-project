@@ -4,7 +4,23 @@
 export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        'fade-in-left': {
+          '0%':{
+            transform: 'translateX(-100%)',
+            opacity: '0'
+          },
+          '100%':{
+            transform: 'translateX(0)',
+            opacity: '1'
+          }
+        }
+      },
+      animation:{
+        'fade-in-left': 'fade-in-left 1.6s ease-in-out forwards',
+      }
+    },
     
     colors: {
       green: '#2F5349',
@@ -18,6 +34,8 @@ export default {
       title: ['Big Shoulders Text', 'sans-serif']
     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 }
 
