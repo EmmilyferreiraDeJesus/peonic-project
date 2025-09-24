@@ -26,7 +26,9 @@ export default {
       green: '#2F5349',
       orange: '#E8B236',
       white: '#FFFFFF',
-      greenlight: '#67916B'
+      greenlight: '#67916B',
+      gray: '#777777',
+      black: '#1F1F1F'
     },
 
     fontFamily: {

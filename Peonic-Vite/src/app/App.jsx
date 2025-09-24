@@ -1,19 +1,21 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "../components/Header";
-import HomePage from "../components/home/HomePage";
-import ServicosPage from "../components/servicos/ServicosPage";
+import HomePage from "../components/HomePage";
+import ServicesPage from "../components/ServicesPage";
+import Footer from "../components/Footer";
 
 function App() {
   return (
-      <Router>
-      <div>
+    <Router>
+      <div className="h-screen">
         <Header />
-        <main className="h-screen">
+        <main>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/servicos" element={<ServicosPage />} />
+            <Route path="/servicos" element={<ServicesPage />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   );

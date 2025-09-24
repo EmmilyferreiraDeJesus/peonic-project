@@ -1,9 +1,10 @@
-import mulherNoJardim from "../../assets/mulher-mexendo-grama-app.png";
-import mulherComVasoJardim from "../../assets/mulher-segurando-planta-app.png";
-import VasoNoChaoJardim from "../../assets/planta-no-chao-app.png";
+import mulherNoJardim from "../assets/mulher-mexendo-grama-app.png";
+import mulherComVasoJardim from "../assets/mulher-segurando-planta-app.png";
+import VasoNoChaoJardim from "../assets/planta-no-chao-app.png";
 
 export default function HomePage() {
   return (
+    <div>
       <div className="bg-green h-[120dvh] relative">
         <img
           className="top-14 pl-[46%] absolute h-[80%]"
@@ -42,5 +43,9 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+      <div className="p-32">
+        
+      </div>
+    </div>
   );
 }

@@ -12,10 +12,10 @@ export default function Header() {
                 </Link>
             </div>
             <nav className="flex justify-between items-center w-[25%]">
-                <li className="list-none text-lg font-text text-white cursor-pointer hover:text-orange"><Link to="/servicosPage">Serviços</Link></li>
-                <li className="list-none text-lg font-text text-white cursor-pointer hover:text-orange">Sobre</li>
-                <li className="list-none text-lg font-text text-white cursor-pointer hover:text-orange">Portfolio</li>
-                <li className="list-none text-lg font-text text-white cursor-pointer hover:text-orange">Contato</li>
+                <li className="list-none text-lg font-text text-white cursor-pointer hover:text-orange transition duration-300"><Link to="/servicosPage">Serviços</Link></li>
+                <li className="list-none text-lg font-text text-white cursor-pointer hover:text-orange transition duration-300">Sobre</li>
+                <li className="list-none text-lg font-text text-white cursor-pointer hover:text-orange transition duration-300">Portfolio</li>
+                <li className="list-none text-lg font-text text-white cursor-pointer hover:text-orange transition duration-300">Contato</li>
             </nav>
         </header>
 
